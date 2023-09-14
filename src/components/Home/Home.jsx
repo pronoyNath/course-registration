@@ -4,14 +4,22 @@ import Cart from '../Cart/Cart';
 
 const Home = () => {
     const [courses, setCourses] = useState([]);
+    const [selectedCourses, setSelectedCourses] = useState([]);
+
+
     useEffect(() => {
         fetch('data.json')
             .then(resp => resp.json())
             .then(data => setCourses(data))
     }, []);
 
+    const handleSelectCourse =  (course)=>{
+        const newCourses = [...selectedCourses,course];
+        setSelectedCourses(newCourses);
+    }
+
     return (
-        <div className='flex'>
+        <div className='flex gap-5'>
             <div className='flex-1 grid grid-cols-3 gap-5'>
             {
                 courses.map(course => (
@@ -27,7 +35,7 @@ const Home = () => {
                                 <p className='font-semibold'><span><i className="fa-solid fa-book-open"></i></span> Credit: {course.credit_hr}hr</p>
                             </div>
                             <div className="card-actions">
-                                <button className="btn btn-primary w-full">Buy Now</button>
+                                <button onClick={()=>handleSelectCourse(course)} className="btn btn-primary w-full">Select</button>
                             </div>
                         </div>
                     </div>
@@ -36,7 +44,9 @@ const Home = () => {
         </div>
         {/* selected courses */}
         <div className='w-72'>
-            <Cart></Cart>
+            <Cart
+            selectedCourses={selectedCourses}
+            ></Cart>
         </div>
 
         </div>
