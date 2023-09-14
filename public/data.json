@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/3mTKPz4/Rectangle-2-2.png",
+        "title": "Introduction to C Programming",
+        "description": "Learn the fundamentals of C programming language and start your journey into the world of coding.",
+        "price": 49.99,
+        "credit_hr": 3
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/wzcz2bb/Rectangle-2-3.png",
+        "title": "Introduction to Algorithms",
+        "description": "Master the basics of algorithms and algorithmic problem-solving techniques.",
+        "price": 59.99,
+        "credit_hr": 4
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/X24NCPY/Rectangle-2-4.png",
+        "title": "Introduction to C++ for DSA",
+        "description": "Explore C++ programming in the context of data structures and algorithms.",
+        "price": 54.99,
+        "credit_hr": 6
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/9WnkQ4m/Rectangle-3.png",
+        "title": "Basic Data Structures",
+        "description": "Get a solid understanding of fundamental data structures and their applications.",
+        "price": 69.99,
+        "credit_hr": 7
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/6D2xLS0/Rectangle-2.png",
+        "title": "Introduction to OOP Python",
+        "description": "Learn object-oriented programming with Python and build efficient, reusable code.",
+        "price": 49.99,
+        "credit_hr": 3
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/x7QWNxX/Rectangle-2-5.png",
+        "title": "Software Engineering",
+        "description": "Dive into the principles and practices of software engineering for building robust, scalable applications.",
+        "price": 79.99,
+        "credit_hr": 5
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/tPqytCB/Rectangle-3-1.png",
+        "title": "AWS, Cloud Computing",
+        "description": "Explore cloud computing with Amazon Web Services (AWS) and leverage the power of the cloud.",
+        "price": 89.99,
+        "credit_hr": 6
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/QCTk52Y/Rectangle-2-1.png",
+        "title": "Database (MySQL)",
+        "description": "Learn the essentials of database management using MySQL for efficient data storage and retrieval.",
+        "price": 64.99,
+        "credit_hr": 4
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/mN7RcdH/Rectangle-2-6.png",
+        "title": "Problem-Solving Part",
+        "description": "Hone your problem-solving skills with practical exercises and real-world scenarios.",
+        "price": 39.99,
+        "credit_hr": 2
+    }
+]
