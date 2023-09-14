@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
@@ -19,7 +20,11 @@ const Home = () => {
     const handleSelectCourse = (course) => {
         const isExists = selectedCourses.find(selected => selected.id === course.id);
         if (isExists) {
-            return alert("Already Selected.");
+            return swal({
+                title: "Duplicate Select!",
+                text: "I will close in 2 seconds.",
+                timer: 2000
+              });
         }
         else {
             let totalCredit = course.credit_hr;
@@ -27,7 +32,7 @@ const Home = () => {
                 totalCredit = totalCredit + course.credit_hr)
 
                 if(totalCredit>20){
-                    return alert("all credit finished.")
+                    return sweetAlert("Oops...", "Need More Credit !!!", "error");
                 }
                 else{
                    
